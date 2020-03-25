@@ -1,0 +1,151 @@
+html, body {
+  background-color: #eee;
+}
+
+.characterContainer {
+  width: 100%;
+}
+
+.characterContainer .characterList {
+  width: 100%;
+}
+
+.characterContainer .characterList ul {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  list-style: none;
+}
+
+.characterContainer .characterList ul li {
+  width: 33.3%;
+  float: left;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.characterContainer .characterList ul li img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  cursor: pointer;
+  margin: 0;
+}
+
+.characterContainer .characterList ul li:not(:first-child):hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(81, 146, 193, 0.8);
+  z-index: 1;
+  padding-top: 100px;
+  overflow: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modal-content {
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
+}
+
+.modal .cationContainer {
+  margin: auto;
+  width: 80%;
+  max-width: 500px;
+  padding: 10px 0;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .cationContainer #caption {
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal .close:hover, .modal .close:focus {
+  color: #ababaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .characterContainer .characterList ul li {
+    width: 50%;
+  }
+  .characterContainer .characterList .modal #caption {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .characterContainer .characterList ul li {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=character.css.map */

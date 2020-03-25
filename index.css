@@ -1,0 +1,454 @@
+.container {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.container .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .titleContainer .sectionTitle {
+  font-size: 50px;
+  position: relative;
+}
+
+.container .titleContainer > ::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  border-color: #d65c5c;
+  border-style: solid;
+}
+
+.overViewSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.overViewSection .overViewCotent {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overViewSection .overViewCotent .overView {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  border-right: 1px dotted #ccc;
+  padding-right: 10px;
+}
+
+.overViewSection .overViewCotent .overViewVideo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+}
+
+.overViewSection .overViewCotent .overViewVideo ul:nth-child(3) {
+  background-color: #5192c1;
+  color: #fff;
+}
+
+.characterSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.characterList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 10px;
+}
+
+.moreContainer {
+  position: relative;
+  width: 100%;
+}
+
+.moreContainer .more {
+  position: absolute;
+  right: 5%;
+  top: 20px;
+  cursor: pointer;
+  color: #5e5e5e;
+  text-decoration: none;
+}
+
+.moreContainer .more span {
+  margin-right: 10px;
+}
+
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  padding-top: 100px;
+  overflow: auto;
+}
+
+.modal .modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+}
+
+.modal #caption {
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal .close:hover, .modal .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.igSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.igSection .photosContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.igSection .photosContainer .photoItem {
+  width: 250px;
+  height: 250px;
+  margin: 10px 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.igSection .photosContainer .photoItem .photo {
+  background: url(https://instagram.ftpe3-2.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/88127223_191012939008668_6823186110905559104_n.jpg?_nc_ht=instagram.ftpe3-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=cpO_r9YFYmkAX9qFRPq&oh=a15266302d8931417d3ebc1039134de7&oe=5E83BB6D);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: cnter;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo .filter1 {
+  display: none;
+}
+
+.igSection .photosContainer .photoItem .photo .filter1 .smalltag {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+}
+
+.igSection .photosContainer .photoItem .photo .filter1 .description {
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 30px;
+}
+
+.igSection .photosContainer .photoItem .photo:hover .filter1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.igSection .photosContainer .photoItem .photo2 {
+  background: url(https://instagram.ftpe3-2.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/87635791_496213564421423_4487211452637314735_n.jpg?_nc_ht=instagram.ftpe3-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=ZoKPOwUE1ugAX8a5eLu&oh=5199e3de36cd60d5c00ebd7bd87b02f0&oe=5E881BF5);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo3 {
+  background: url(https://scontent-hkg3-1.cdninstagram.com/v/t51.2885-15/e15/87230045_491677458190192_252680716574552791_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&_nc_cat=104&_nc_ohc=rJgFszyqee4AX_IcgcO&oh=d1be85bc89f3d7ddf43cf06df9238860&oe=5E5EF58B);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo4 {
+  background: url(https://instagram.ftpe3-2.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/83920584_637660710384763_4534578014079816628_n.jpg?_nc_ht=instagram.ftpe3-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=PoSmDm_SuEAAX-y2opL&oh=c18dd63ab270bb88e23289a892ce849f&oe=5E8B374F);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo5 {
+  background: url(https://instagram.ftpe3-2.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/84486049_503076253942283_8146014039894159647_n.jpg?_nc_ht=instagram.ftpe3-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=rI5pXtlGFbYAX_zWlI8&oh=32f018ed4a7df5d473e9304a57fc05be&oe=5E8051CF);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo6 {
+  background: url(https://instagram.ftpe3-1.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/85174102_488996202002764_8150855730567114971_n.jpg?_nc_ht=instagram.ftpe3-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=lMYpOkdP9gQAX81ZS1s&oh=37f422dc05caf54a56b2ad53b46f3334&oe=5E875955);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo7 {
+  background: url(https://instagram.ftpe3-1.fna.fbcdn.net/v/t51.2885-15/fr/e15/p1080x1080/85045317_179532386709911_8581030310560470156_n.jpg?_nc_ht=instagram.ftpe3-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=fFXV4-uQdK0AX8SXnXB&oh=bb4d3e87d8a8a3020da0247e07e662a9&oe=5E8AE35D);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo8 {
+  background: url(https://scontent-hkg3-1.cdninstagram.com/v/t51.2885-15/e15/83732942_533388967383378_8828751144636877869_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&_nc_cat=106&_nc_ohc=I4zyUeSTc1EAX_Ym-sc&oh=a1d94e6848c7a020b401c85e7ac0eb7e&oe=5E5EF7A2);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo9 {
+  background: url(https://scontent-hkg3-1.cdninstagram.com/v/t51.2885-15/e15/84434521_657878691418622_2061502910117091816_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&_nc_cat=102&_nc_ohc=zAPz6Usc6JQAX8Pkapq&oh=326cb2b9d2756250cba928f5443f76e7&oe=5E5EF394);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo10 {
+  background: url(https://instagram.ftpe3-2.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/84666762_2514591242114177_8872099949873178970_n.jpg?_nc_ht=instagram.ftpe3-2.fna.fbcdn.net&_nc_cat=105&_nc_ohc=mXkreJU1DG8AX8uJYxW&oh=f92cf37938b7216669fdfbb5a6cc9045&oe=5E8C8F52);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo11 {
+  background: url(https://instagram.ftpe3-2.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/84535996_179964256748707_8726800882018181429_n.jpg?_nc_ht=instagram.ftpe3-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=u3lQe-u1YDoAX-lNAMJ&oh=b8d007aa3690b98236e4c2460033ed57&oe=5E89916B);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .photo12 {
+  background: url(https://scontent-hkg3-1.cdninstagram.com/v/t51.2885-15/e35/84444149_3001689353390672_8579326159404839577_n.jpg?_nc_ht=scontent-hkg3-1.cdninstagram.com&_nc_cat=108&_nc_ohc=ibyL1WO-DC8AX--h-0T&oh=ffd514b00e97a703daac5bed970104c7&oe=5E5F1D3B);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.igSection .photosContainer .photoItem .postType {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.igSection .photosContainer .photoItem:hover .photo {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+  .container .titleContainer .sectionTitle {
+    font-size: 40px;
+  }
+  .overViewSection .overViewCotent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .overViewSection .overViewCotent .overView {
+    border: none;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 20px;
+  }
+  .characterList {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+  }
+  .moreContainer a span {
+    font-size: 0.9rem;
+  }
+  iframe {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container .titleContainer .sectionTitle {
+    font-size: 30px;
+  }
+  .characterList {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .igSection .photosContainer .photoItem {
+    width: 350px;
+    height: 350px;
+  }
+  .moreContainer a span {
+    font-size: 0.8rem;
+  }
+  .moreContainer a span iframe {
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

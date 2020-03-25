@@ -1,0 +1,72 @@
+.teamBg {
+  width: 80%;
+  position: fixed;
+  top: 20%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.teamBg img {
+  border-radius: 10px;
+}
+
+.teamSection {
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.teamSection .teamContainer {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.teamSection .teamContainer article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.teamSection .teamContainer article h3 {
+  position: relative;
+}
+
+.teamSection .teamContainer article h3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 5px;
+  background-color: #5192C1;
+}
+/*# sourceMappingURL=team.css.map */

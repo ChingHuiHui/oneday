@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>test</title>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Noto+Sans+TC|Noto+Serif+TC|Roboto|Spartan|Titillium+Web&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eca7313d19.js" crossorigin="anonymous"></script>
+  <link href="character.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   
+    <header>
+        <div class="headerContainer">
+            <img src="header1.jpg">
+        </div>
+     
+        <div class="media">
+            <a href='https://www.instagram.com/somedayoroneday/' target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href='https://www.facebook.com/SomeDayOrOneDay' target="_blank"><i class="fab fa-facebook-square" ></i></a>
+            <a href='https://www.youtube.com/user/jtv168' target="_blank"><i class="fab fa-youtube "></i></a>    
+        </div>
+    </header>
+        <div class="mainNavContainer">
+            <nav class="mainNav" id='mainNav'>
+              <a href='index.html'>HOME</a>
+                <a href='character.html' class="active">CHARACTER</a>
+                <a href='overview.htmml'>OVERVIEW</a>
+                <a href='gallery.html'>GALLERY</a>
+                <a href='music.html'>MUSIC</a>
+                <a href='community.html'>COMMUNITY</a>
+                <a href='team.html'>TEAM</a>
+                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                  <i class="fa fa-bars"></i>
+              </a>
+            </nav>
+    
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href='index.html'>HOME</a>
+          <a href='character.html'>CHARACTER</a>
+          <a href='overview.htmml'>OVERVIEW</a>
+          <a href='gallery.html'>GALLERY</a>
+          <a href='music.html'>MUSIC</a>
+          <a href='community.html'>COMMUNITY</a>
+          <a href='team.html'>TEAM</a>
+        </div>
+    
+<div class="characterContainer">
+    <div class="characterList">
+        <ul>
+          
+            <li>
+                <img class="profileImg" src='1.jpg' ></img>
+
+            </li>
+           
+            <li>
+            
+                <img class="profileImg" id ='c1' onclick="myFunction('c1')" alt='黃雨萱/柯佳嬿' src='FotoJet (1).jpg' data-img="c1.jpg"></img>
+            </li>
+            <li>
+                <img class="profileImg" id ='c3' onclick="myFunction('c3')"   alt='王銓勝/許光漢' src='FotoJet (3).jpg' data-img="c3.jpg"></img>
+            </li>
+            <li >
+                <img class="profileImg" id ='c2' onclick="myFunction('c2')"  alt='陳韻如/柯佳嬿' src='FotoJet (2).jpg' data-img="c2.jpg"></img>
+
+            </li>
+            <li>
+                <img class="profileImg" id ='c4' onclick="myFunction('c4')"  alt='李子維/許光漢' src='FotoJet (4).jpg' data-img="c4.jpg"></img>
+            </li>
+            <li>
+                <img class="profileImg" id ='c5' onclick="myFunction('c5')"  alt='莫俊傑/施柏宇' src='FotoJet (5).jpg' data-img="c5.jpg"></img>
+            </li>
+            <li>
+                <img class="profileImg" id ='c6' onclick="myFunction('c6')"  alt='班長/顏毓麟' src='FotoJet (6).jpg' data-img="c6.jpg"></img>
+            </li>
+            <li>
+                <img class="profileImg" id ='c7' onclick="myFunction('c7')"  alt='吳文磊/張翰' src='FotoJet (7).jpg' data-img="c7.jpg"></img>
+            </li>
+            <li>
+                <img class="profileImg" id ='c8' onclick="myFunction('c8')"  alt='吳瑛嬋/嚴藝文 | 陳思源/大鶴' src='FotoJet (8).jpg' data-img="c8.jpg"></img>
+            </li>
+            <li>
+                <img class="profileImg" id ='c9' onclick="myFunction('c9')"  alt='昆布/大文' src='FotoJet (9).jpg' data-img="c9.jpg"></img>
+            </li>
+            <li>
+                <img class="profileImg" id ='c10' onclick="myFunction('c10')"  alt='阿脫/章廣辰' src='FotoJet (10).jpg' data-img="c10.jpg"></img>
+            </li>
+            <li>
+                <img class="profileImg" id ='c11' onclick="myFunction('c11')"  alt='娜姐/張家慧' src='FotoJet (11).jpg' data-img="c11.jpg"></img>
+            </li>
+            <li>
+                <img class="profileImg" id ='c12' onclick="myFunction('c12')"  alt='小黛/林子珊' src='FotoJet (12).jpg' data-img="c12.jpg"></img>
+            </li>
+            <li>
+                <img class="profileImg" id ='c13' onclick="myFunction('c13')"  alt='陳財裕/大飛' src='FotoJet (13).jpg' data-img="c13.jpg"></img>
+            </li>
+           
+        </ul>
+        <div id='myModal' class='modal'>
+            <span class="close">&times;</span>
+            <img class='modal-content' id='img01'>
+            <div class="cationContainer">
+            <div id='caption'></div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div>
+    <div class='footerContainer'>
+                <a href='https://www.instagram.com/somedayoroneday/' target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href='https://www.facebook.com/SomeDayOrOneDay' target="_blank"><i class="fab fa-facebook-square" s></i></a>
+                <a href='https://www.youtube.com/user/jtv168' target="_blank"><i class="fab fa-youtube "></i></a>    
+    
+            </div>
+            <div style="padding-bottom: 10px;">
+                COPY RIGHT CHING-HUI
+            </div>
+            </div>
+</footer>
+
+
+
+
+<script>
+
+        /* sidebar */
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+
+        }
+
+          /* character */
+        var modal = document.getElementById("myModal");
+        var captionText = document.getElementById("caption");
+        var modalImg = document.getElementById('img01');
+
+        function myFunction(name){
+       
+        var img = document.getElementById(name);
+        modal.style.display = "flex";
+        modalImg.src = img.dataset.img;
+        captionText.innerHTML = img.alt;
+        }
+
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
