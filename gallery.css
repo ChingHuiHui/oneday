@@ -114,7 +114,9 @@
     font-size: 0.8rem;
   }
   .Gcontainer .gContent .row {
-    display: none;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 80px;
   }
 }
 
@@ -130,7 +132,9 @@
     font-size: 0.6rem;
   }
   .Gcontainer .gContent .row {
-    display: none;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
   }
 }
 /*# sourceMappingURL=gallery.css.map */
