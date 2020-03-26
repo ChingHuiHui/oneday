@@ -5,7 +5,7 @@
   justify-content: center
   align-items: center
   .gContent
-    width: 60%
+    width: 80%
     margin: 50px
     .slidesCotinaer   
       position: relative
@@ -67,6 +67,7 @@
 @media screen and (max-width: 900px)
   .Gcontainer
     .gContent
+      width: 90%
       .slidesCotinaer 
         .caption-container 
           padding: 0
@@ -74,14 +75,14 @@
           #caption
             font-size: 0.8rem  
       .row
-        grid-template-columns: repeat(3,1fr)
-        grid-auto-rows: 80px
-    
+        display: none
+
 
 @media screen and (max-width: 600px)
 
   .Gcontainer
     .gContent
+      width: 90%
       .slidesCotinaer 
         .caption-container 
           padding: 0
@@ -89,8 +90,7 @@
           #caption
             font-size: 0.6rem  
       .row
-        grid-template-columns: repeat(2,1fr)
-        grid-auto-rows: 60px
+        display: none
 
 
 // .slogan1
