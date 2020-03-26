@@ -176,5 +176,9 @@ footer .footerContainer a {
   .slogan span {
     font-size: 60px;
   }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
