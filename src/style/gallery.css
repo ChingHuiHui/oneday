@@ -35,6 +35,10 @@
   top: 0;
 }
 
+.Gcontainer .gContent .slidesCotinaer .mySlides img {
+  width: 100%;
+}
+
 .Gcontainer .gContent .slidesCotinaer .prev, .Gcontainer .gContent .slidesCotinaer .next {
   cursor: pointer;
   position: absolute;
@@ -97,6 +101,7 @@
 
 .Gcontainer .gContent .row .column .demo {
   opacity: 0.6;
+  width: 100%;
 }
 
 .Gcontainer .gContent .row .column .active, .Gcontainer .gContent .row .column .demo:hover {
